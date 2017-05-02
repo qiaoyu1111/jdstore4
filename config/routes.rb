@@ -3,9 +3,8 @@ Rails.application.routes.draw do
     resources :products
   end
 
-  resources :products
 
   devise_for :users
 
-  root 'products#index'
+  root 'welcome#index'
 end
