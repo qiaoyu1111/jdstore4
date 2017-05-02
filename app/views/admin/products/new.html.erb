@@ -1,0 +1,9 @@
+<h2>新增产品</h2>
+
+<%= simple_form_for [:admin, @product ] do |f| %>
+
+<%= f.input :title %>
+<%= f.input :description %>
+
+<%= f.submit "Submit", :disable_with => 'Submiting...' %>
+<% end %>
